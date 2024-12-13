@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe.com  - Cook, Explore & Tell a Story</title>
+    <!-- Fav Icon 👀👇🏾 -->
+    <link rel="shortcut icon" href="assets/img/rcon.png" type="image/x-icon">
+    <!-- MaterializeCSS 👀👇🏾 -->
+    <link rel="stylesheet" href="assets/css/materialize.css">
+    <!-- Material Icons 👀👇🏾 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Josephin Sans Font 👀👇🏾-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        .center-xy {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        .spinner-blue, .spinner-blue-only {
+        border-color: #e65100 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader center-xy center-align" id="preloader">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                <div class="circle"></div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <script>
+        // Function to load the page after 10 seconds
+        function delayedLoad() {
+            setTimeout(function() {
+                document.getElementById('preloader').style.display = 'none'; // Hide the preloader
+                window.location.href = 'home.html'; // Change 'target-page.html' to your desired page
+            }, 5000); // 10000 milliseconds = 10 seconds
+        }
+
+        // Call the function when the page loads
+        delayedLoad();
+    </script>
+
+
+    <!-- Scripts Below 👀👇🏾 -->
+    <script src="assets/js/jqueryv3.4.1.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav(); 
+            $('.slider').slider({
+                interval: 5000,
+                indicators: false
+            });
+        });
+    </script>
+</body>
+</html>

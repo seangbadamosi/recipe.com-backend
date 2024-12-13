@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe.com  - Cook, Explore & Tell a Story</title>
+    <!-- Fav Icon 👀👇🏾 -->
+    <link rel="shortcut icon" href="assets/img/rcon.png" type="image/x-icon">
+    <!-- MaterializeCSS 👀👇🏾 -->
+    <link rel="stylesheet" href="assets/css/materialize.css">
+    <!-- Material Icons 👀👇🏾 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Josephin Sans Font 👀👇🏾-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        }
+
+        a:hover {
+            font-weight: 800 !important;
+            transition: ease-in .2s;
+        }
+
+        a.btn {
+            border-radius: 10px !important;
+        } 
+
+        p {
+            font-size: 16pt !important;
+        }
+        .text-justify {
+            text-align: justify !important;
+        }
+
+        .rounded-edges {
+            border-radius: 10px !important;
+        }
+
+        .card-image:hover .overlay {
+            border-radius: 10px;
+            opacity: 1;
+            cursor: pointer;
+            text-decoration: underline white;
+        }
+
+        .underline {
+            text-decoration: underline white !important;
+        }
+
+        .gradient-bg {
+        background: linear-gradient(to bottom, #ffffff, #e65100);
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <!-- Nav Component 👀👇🏾 -->
+        <div class="navbar-fixed">
+            <nav class="white z-depth-0">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col s12 m6 l3">
+                            <a href="/" class="brand-logo">
+                                <!-- Logo for Desktops 👀👇🏾 -->
+                                <img src="assets/img/logo.png" alt="" width="150px" class="hide-on-med-and-down">
+                                <!-- Slightly Smaller Logo for Tablets & Smartphones 👀👇🏾 -->
+                                <img src="assets/img/logo.png" alt="" width="120px" class="hide-on-large-only">
+                            </a>
+                            <!-- Sidenav Trigger -->
+                            <a href="#sidenav" class="sidenav-trigger left">
+                                <i class="material-icons orange-text text-darken-4">menu</i>
+                            </a>
+                        </div>
+                        <!-- Nav links for Desktops -->
+                        <div class="col s12 m6 l9">
+                            <ul class="right">
+                                <li><a href="#about_us" class="orange-text text-darken-4 scrollspy">Who We Are</a></li>
+                                <li><a href="#catergories" class="orange-text text-darken-4 scrollspy">Find a Recipe</a></li>
+                                <li><a href="#experts" class="orange-text text-darken-4 scrollspy">Meet the Experts</a></li>
+                                <li><a href="#cliente" class="orange-text text-darken-4 scrollspy">Cliente</a></li>
+                                <li><a href="./login.php" target="_blank" class="btn rounded-edges orange white-text darken-4 scrollspy">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Sidenav 👀👇🏾 -->
+        <ul class="hide-on-large-only sidenav" id="sidenav">
+            <li><a href="#about_us" class="orange-text text-darken-4 scrollspy">Who We Are</a></li>
+            <li><a href="#catergories" class="orange-text text-darken-4 scrollspy">Find a Recipe</a></li>
+            <li><a href="#experts" class="orange-text text-darken-4 scrollspy">Meet the Experts</a></li>
+            <li><a href="#cliente" class="orange-text text-darken-4 scrollspy">Cliente</a></li>
+            <br>
+            <li><a href="./login.php" target="_blank" class="btn orange darken-4 z-depth-0">Login</a></li>
+        </ul>
+        <!-- Background Video & Welcome Text (Dessktops) 👀👇🏾 -->
+        <div class="video-container hide-on-med-and-down">
+            <video autoplay loop class="">
+                <source src="assets/img/header-bg-vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-overlay">
+                <div class="hide-on-med-and-down white-text">
+                    <h1>Every Dish Tells a Story.</h1>
+                    <h4> Explore, cook, and create with us.</h4>
+                    <a href="index.html#catergories" class="btn btn-large orange darken-4">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+        <!-- Background Image & Welcome Text (Tabs & Mobile) 👀👇🏾 -->
+        <div class="hide-on-large-only left-align white-text valign-wrapper" style="height: 40vh; background-image: url(assets/img/welcome-banner.jpg); background-size: cover;">
+            <div class="container">
+                <h4>Every Dish Tells a Story.</h4>
+            <h6> Explore, cook, and create with us.</h6>
+            <br>
+            <a href="index.html#catergories" class="btn orange darken-4">GET STARTED</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Welcome Section 👀👇🏾 -->
+        <section class="section scrollspy" id="welcome">
+            <div class="section container">
+                <div class="row valign-wrapper">
+                    <div class="col s12 m6">
+                        <h2 class="hide-on-small-and-down">Start your culinary journey <em class="orange-text text-darken-4">today.</em></h2>
+                        <h4 class="hide-on-med-and-up">Start your culinary journey <em class="orange-text text-darken-4">today.</em></h4>
+                        <p class="">We offer you a gateway to an expertly curated selection of global recipes, ranging from traditional dishes to innovative creations, spanning various cuisines and cooking techniques.</p>
+                        <a href="./login.php" target="_blank" class="btn btn-large orange darken-4">START YOUR JOURNEY</a>
+                    </div>
+                    <div class="col s12 m6 hide-on-small-and-down">
+                        <br><br>
+                        <img src="assets/img/spaghetti.png" alt="" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Section 👀👇🏾 -->
+        <section class="section scrollspy" id="catergories">
+            <div class="section container">
+                <h2 class="hide-on-small-and-down center-align">Select a <em class="orange-text text-darken-4">category</em></h2>
+                <h4 class="hide-on-med-and-up center-align">Tap on a <em class="orange-text text-darken-4">category</em></h4>
+                <!-- On Desktops 👀👇🏾 -->
+                <div class="row hide-on-med-and-down">
+                    <div class="col s12 l4">
+                        <a href="./cakes.html">
+                            <div class="card rounded-edges">
+                                <div class="card-image rounded-edges">
+                                    <img src="assets/img/cake-main-1.jpg" alt="" class="responsive-img rounded-edges">
+                                    <div class="overlay">
+                                        <div class="overlay-text">Cakes
+                                            <i class="material-icons white-text" style="transform: rotate(-45deg);">arrow_forward</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s12 l4">
+                        <a href="./Chicken.html">
+                            <div class="card rounded-edges">
+                                <div class="card-image rounded-edges">
+                                    <img src="assets/img/chicken-main.jpg" alt="" class="responsive-img rounded-edges">
+                                    <div class="overlay">
+                                        <a href="./Chicken.html" class="overlay-text">Chicken
+                                            <i class="material-icons white-text" style="transform: rotate(-45deg);">arrow_forward</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s12 l4">
+                        <a href="./soups.html">
+                            <div class="card rounded-edges">
+                                <div class="card-image rounded-edges">
+                                    <img src="assets/img/soup-main.jpg" alt="" class="responsive-img rounded-edges">
+                                    <div class="overlay">
+                                        <div class="overlay-text">Soups
+                                            <i class="material-icons white-text" style="transform: rotate(-45deg);">arrow_forward</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- On Mobiles 👀👇🏾 -->
+                <br>
+            </div>
+            <div class="slider hide-on-large-only ">
+                <ul class="slides ">
+                    <li>
+                        <a href="./cakes.html">
+                            <img src="assets/img/cake-main.jpg" alt="" class="">
+                            <div class="caption center-align">
+                                <h3 class="white-text underline">Cakes
+                                    <i class="material-icons white-text" style="transform: rotate(-45deg);">arrow_forward</i>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Chicken.html">
+                            <img src="assets/img/chicken-main.jpg" alt="" class="">
+                            <div class="caption right-align">
+                                <h3 class="white-text underline">Chicken
+                                    <i class="material-icons white-text" style="transform: rotate(-45deg);">arrow_forward</i>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./soups.html">
+                            <img src="assets/img/soup-main.jpg" alt="" class="">
+                            <div class="caption left-align">
+                                <h3 class="white-text underline">Soups
+                                    <i class="material-icons white-text" style="transform: rotate(-45deg);">arrow_forward</i>
+                                </h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About Us Section 👀👇🏾 -->
+        <section class="section scrollspy" id="about_us">
+            <div class="section container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <img src="assets/img/chef.jpg" alt="" class="responsive-img hide-on-small-and-down">
+                        <img src="assets/img/chef-thumbs-up.jpg" alt="" class="responsive-img hide-on-med-and-up">
+                    </div>
+                    <div class="col s12 m6">
+                        <h2 class="hide-on-med-and-down">Crafted by Culinary <em class="pink-text text-darken-2">Wizards.</em></h2>
+                        <h4 class="hide-on-large-only center-align">Crafted by Culinary <em class="pink-text text-darken-2">Wizards.</em></h4>
+                        <p>Discover a world of flavorful options that promise mouthwatering results, meticulously curated and perfected by culinary experts, all at your fingertips. Easy as pie, isn't it?</p>
+                        <br>
+                        <a href="./login.php" target="_blank" class="btn btn-large rounded-edges pink darken-2">START COOKING</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Numbers Section 👀👇🏾 -->
+        <section class="section scrollspy black" id="our_numbers">
+            <div class="section container center-align">
+                <h2 class="white-text">See our <em class="orange-text text-darken-4">numbers</em></h2>
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card black z-depth-0">
+                            <div class="card-content">
+                                <h1 class="white-text">27k+</h1>
+                                <h5 class="orange-text text-darken-4"><em>active users each month</em></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card black z-depth-0">
+                            <div class="card-content">
+                                <h1 class="white-text">800+</h1>
+                                <h5 class="orange-text text-darken-4"><em>available recipes till date</em></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card black z-depth-0">
+                            <div class="card-content">
+                                <h1 class="white-text">30+</h1>
+                                <h5 class="orange-text text-darken-4"><em>chefs for consultation</em></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Experts Section 👀👇🏾 -->
+        <section class="section scrollspy" id="experts">
+            <div class="section container center-align">
+                <div class="left-align">
+                    <h2 class="hide-on-small-and-down">Meet the <em class="orange-text text-darken-4">experts</em></h2>
+                    <h4 class="hide-on-med-and-up center-align">Meet the <em class="orange-text text-darken-4">experts</em></h4>
+                    <p>Our team of seasoned chefs offer expert guidance and delectable recipes to elevate your kitchen creations to new heights.</p>
+                </div>
+                <div class="section row">
+                    <div class="col s12 m6 l4">
+                        <div class="card z-depth-0">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/img/expert-1.jpg">
+                            </div>
+                            <div class="card-action left-align">
+                                <h5 class="card-title activator grey-text text-darken-4">
+                                Liam
+                                <em class="orange-text text-darken-4">Hamish</em>
+                                <i class="material-icons right">expand_less</i>
+                            </h5>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons red-text text-darken-2 right">close</i></span>
+                                <p class="flow-text left-align">A Scottish culinary virtuoso, infuses traditional flavors with innovative techniques, crafting exquisite dishes that celebrate his rich culinary heritage. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card z-depth-0">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/img/expert-2.jpg">
+                            </div>
+                            <div class="card-action left-align">
+                                <h5 class="card-title activator grey-text text-darken-4">
+                                Alejandro
+                                <em class="orange-text text-darken-4">Mateo</em>
+                                <i class="material-icons right">expand_less</i>
+                            </h5>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons red-text text-darken-2 right">close</i></span>
+                                <p class="flow-text left-align">He showcases the rich tapestry of Spanish cuisine through his bold flavors and artistic presentations, honoring age-old traditions with a contemporary flair. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card z-depth-0">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/img/expert-3.jpg">
+                            </div>
+                            <div class="card-action left-align">
+                                <h5 class="card-title activator grey-text text-darken-4">
+                                Miranda
+                                <em class="orange-text text-darken-4">Tangrove</em>
+                                <i class="material-icons right">expand_less</i>
+                            </h5>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons red-text text-darken-2 right">close</i></span>
+                                <p class="flow-text left-align">She brings a modern twist to classic American cuisine, blending flavors from diverse cultural influences to create culinary masterpieces that captivate the palate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cliente Section 👀👇🏾 -->
+        <section class="section scrollspy center-align" id="cliente">
+            <div class="section container">
+                <hr>
+                <h2 class="hide-on-small-and-down">Our Esteemed <em class="orange-text text-darken-4">Cliente</em></h2>
+                <h4 class="hide-on-med-and-up center-align">Our Esteemed <em class="orange-text text-darken-4">Cliente</em></h4>
+                <div class="row">
+                    <div class="col s6 l2"><img src="assets/img/rest-1.avif" alt="" class="responsive-img"></div>
+                    <div class="col s6 l2"><img src="assets/img/rest-2.avif" alt="" class="responsive-img"></div>
+                    <div class="col s6 l2"><img src="assets/img/rest-3.avif" alt="" class="responsive-img"></div>
+                    <div class="col s6 l2"><img src="assets/img/rest-4.avif" alt="" class="responsive-img"></div>
+                    <div class="col s6 l2"><img src="assets/img/rest-5.avif" alt="" class="responsive-img"></div>
+                    <div class="col s6 l2"><img src="assets/img/rest-6.avif" alt="" class="responsive-img"></div>
+                </div>
+                <hr>
+            </div>
+        </section>
+    </main>
+    <br><br>
+    <footer class="page-footer section scrollspy gradient-bg" id="footer">
+        <section class="section">
+            <div class="section container">
+                <div class="section row">
+                    <div class="col s12 l3">
+                        <h6 class="orange-text text-darken-4">About</h6>
+                        <ul>
+                            <li><a class="black-text scrollspy" href="#about_us">Who We Are</a></li>
+                            <li><a class="black-text scrollspy" href="#experts">Meet the Chefs</a></li>
+                            <li><a class="black-text scrollspy" href="#top">Back to Top</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l3">
+                        <h6 class="orange-text text-darken-4">Explore</h6>
+                        <ul>
+                            <li><a class="black-text" href="./cakes.html">Cakes</a></li>
+                            <li><a class="black-text" href="./Chicken.html">Chicken</a></li>
+                            <li><a class="black-text" href="./soups.html">Soups</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l3">
+                        <h6 class="orange-text text-darken-4">Legal</h6>
+                        <ul>
+                            <li><a class="black-text" href="">Privacy Policy</a></li>
+                            <li><a class="black-text" href="">Terms & Conditions</a></li>
+                            <li><a class="black-text" href="">Disclosure</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l3">
+                        <h6 class="orange-text text-darken-4">Contact Us</h6>
+                        <ul>
+                            <li><a class="black-text" target="_blank" href="tel:+2349024364876">+2349024364876</a></li>
+                            <li><a class="black-text" target="_blank" href="mailto:coresystechng">customersupport@recipe.com</a></li>
+                            <li><a class="black-text" target="_blank" href="https://instagram.com/coresystechng">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright transparent">
+                <div class="container center-align">
+                    <p>&COPY; 2024. Recipe.com. All rights reserved. </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <!-- Scripts Below 👀👇🏾 -->
+    <script src="assets/js/jqueryv3.4.1.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.slider').slider({
+                interval: 5000,
+                indicators: false
+            });
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>
