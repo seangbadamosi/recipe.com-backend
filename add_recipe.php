@@ -1,6 +1,6 @@
 <?php
 
-include "connect.php";
+include "./connect.php";
 
   $recipe_name = "";
   $recipe_type = ""; 

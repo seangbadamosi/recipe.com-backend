@@ -1,8 +1,7 @@
 <?php 
-    $recipe_id = $_GET ['recipe_id'];
-  //  echo $recipe_id;
-
     include "./connect.php";
+
+    $recipe_id = $_GET ["recipe_id"];
 
     $fetch_query = "SELECT * FROM `recipes_tb` WHERE `recipe_id` = '$recipe_id'";
 
@@ -10,7 +9,7 @@
 
     $recipe = mysqli_fetch_assoc($send_query);
 
-   // print_r($recipe);
+    // print_r($recipe);
 ?>
 
 <!DOCTYPE html>
