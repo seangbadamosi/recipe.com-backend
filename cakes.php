@@ -193,6 +193,5 @@
           $('.chips').chips();
       });
   </script>
->>>>>>> edb3a2af3beb97ec401470cb7aa9a46accd47aed
 </body>
 </html>

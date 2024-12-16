@@ -97,7 +97,7 @@ $chickens = mysqli_fetch_all($send_query,MYSQLI_ASSOC) ;
         <div class="slider hide-on-med-and-down">
             <ul class="slides">
                 <li>
-                    <img src="./assets//img/chicken-main.jpg"  class="" alt=""> <!-- random image -->
+                    <img src="./assets/img/chicken-main.jpg"  class="" alt=""> <!-- random image -->
                 </li>
             </ul>
         </div>
