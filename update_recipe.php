@@ -21,7 +21,34 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
-    <title>Document</title>
+
+    <title>Update Recipe</title>
+
+    <style>
+    *{
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        }
+
+        .h-25{
+            height: 75vh !important;
+            width: 98.7vw;
+        }
+
+        .py-1{
+            padding: 20px 0;
+        }
+
+        .gradient-bg {
+        background: linear-gradient(to bottom, #ffffff, #2E7D32);
+        }
+
+        p {
+        font-size: 14pt !important;
+        }
+    </style>
+    
 </head>
 <body>
 <header class="top">
@@ -65,9 +92,6 @@
             <br>
             <li><a href="./login.php" target="_blank" class="btn green darken-4 z-depth-0">Login</a></li>
         </ul>
-
-        <!-- main Image-->
-        <!-- <img src="./assets/img/chicken-main.jpg" alt="" class="responsive-img hide-on-large-only"> -->
 </header>
 
 <main class=""></main>
