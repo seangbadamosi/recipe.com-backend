@@ -70,6 +70,53 @@
         <!-- <img src="./assets/img/chicken-main.jpg" alt="" class="responsive-img hide-on-large-only"> -->
 </header>
 
+<main class=""></main>
+
+<footer class="page-footer section scrollspy gradient-bg" id="footer">
+        <section class="section">
+            <div class="section container">
+                <div class="section row">
+                    <div class="col s12 l3">
+                        <h6 class="green-text text-darken-4">About</h6>
+                        <ul>
+                            <li><a class="black-text scrollspy" href="home.html#about_us">Who We Are</a></li>
+                            <li><a class="black-text scrollspy" href="home.html#experts">Meet the Chefs</a></li>
+                            <li><a class="black-text scrollspy" href="#top">Back to Top</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l3">
+                        <h6 class="green-text text-darken-4">Explore</h6>
+                        <ul>
+                            <li><a class="black-text" href="./cakes.html">Cakes</a></li>
+                            <li><a class="black-text" href="./Chicken.html">Chicken</a></li>
+                            <li><a class="black-text" href="./soups.html">Soups</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l3">
+                        <h6 class="green-text text-darken-4">Legal</h6>
+                        <ul>
+                            <li><a class="black-text" href="">Privacy Policy</a></li>
+                            <li><a class="black-text" href="">Terms & Conditions</a></li>
+                            <li><a class="black-text" href="">Disclosure</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l3">
+                        <h6 class="green-text text-darken-4">Contact Us</h6>
+                        <ul>
+                            <li><a class="black-text" target="_blank" href="tel:+2349024364876">+2349024364876</a></li>
+                            <li><a class="black-text" target="_blank" href="mailto:coresystechng">customersupport@recipe.com</a></li>
+                            <li><a class="black-text" target="_blank" href="https://instagram.com/coresystechng">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright transparent">
+                <div class="container center-align">
+                    <p>&COPY; 2024. Recipe.com. All rights reserved. </p>
+                </div>
+            </div>
+        </section>
+    </footer>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
