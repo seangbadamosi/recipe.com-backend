@@ -27,7 +27,7 @@
 
     <!-- Internal Styling -->
         <style>
-    *{
+    html{
         font-family: "Josefin Sans", serif;
         font-optical-sizing: auto;
         font-style: normal;

@@ -9,7 +9,25 @@
 
     $recipe = mysqli_fetch_assoc($send_query);
 
-    print_r($recipe);
+    $update_id = "";
+
+    $update_recipe_name = "";
+
+    if(isset($_POST['update'])){
+        $update_id = $_POST['update_recipe_id'];
+
+        $update_recipe_name = $_POST ['update_recipe_name'];
+
+        $update_query = "UPDATE `recipes_tb` SET `recipe_name`='$update_recipe_name' WHERE `recipe_id` = '$update_id'";
+
+        $send_update_query = mysqli_query($connect, $update_query);
+
+        if($send_update_query){
+            header("location:chicken.php");
+        }
+    }
+
+    // print_r($recipe);
 
 
 ?>
@@ -21,6 +39,9 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+
+    <!-- Fonts Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
     <title>Update Recipe</title>
 
@@ -48,7 +69,7 @@
         font-size: 14pt !important;
         }
     </style>
-    
+
 </head>
 <body>
 <header class="top">
@@ -94,7 +115,24 @@
         </ul>
 </header>
 
-<main class=""></main>
+<main class="">
+    <section class="section container">
+        <div class="container">
+            <div class="container">
+                <h3 class="">Update Recipe Name</h3>
+                <form action="update_recipe.php" method="POST">
+                    <input type="hidden" name="update_recipe_id" value="<?php echo $recipe['recipe_id']; ?>">
+                    <div class="col s12 input-field">
+                        <input type="text" name="update_recipe_name" id="update_recipe_name" placeholder="<?php echo $recipe['recipe_name'] ?>">
+                    </div>
+                    <div class="col s12 input-field center-align">
+                        <input type="submit" class="btn btn-large btn-flat green white-text" value="update" name="update">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer class="page-footer section scrollspy gradient-bg" id="footer">
         <section class="section">
@@ -144,5 +182,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+
+
 </body>
 </html>
