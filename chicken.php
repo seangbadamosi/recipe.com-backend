@@ -122,7 +122,7 @@ $chickens = mysqli_fetch_all($send_query,MYSQLI_ASSOC) ;
                                 <img src="assets/img/Chicken 1.jpg">
                             </div>
                                 <div class="card-content">
-                                    <span class="card-title green-text text-darken-3"><?php echo $chicken['recipe_name']; ?></span>
+                                    <span class="card-title "><a href="" class="green-text text-darken-3"><?php echo $chicken['recipe_name']; ?></a></span>
                                 <p><?php echo $chicken['description']; ?></p>
                                 </div>
                                 <div class="card-action">

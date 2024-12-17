@@ -172,7 +172,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright transparent">
+        <div class="footer-copyright transparent">k
             <div class="container center-align">
                 <p>&COPY; 2024. Recipe.com. All rights reserved. </p>
             </div>
