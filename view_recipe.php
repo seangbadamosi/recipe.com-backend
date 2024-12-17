@@ -99,7 +99,7 @@
     <main class="">
         <section class="section container">
             <div class="container">
-                <h1><?php echo $recipe['recipe_name']; ?></h1>
+                <h1 class=""><a href="./update_recipe.php?recipe_id=<?php echo $recipe['recipe_id']; ?>" class="green-text valign-wrapper"><?php echo $recipe['recipe_name']; ?><i class="material-icons small right">create</i></a></h1>
                 <ul class="collection">
                     
                     <li class="collection-item avatar valign-wrapper">
@@ -173,6 +173,18 @@
                 </div>
             </div>
         </section>
-    </footer>       
+    </footer>   
+    
+    
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+
 </body>
 </html>

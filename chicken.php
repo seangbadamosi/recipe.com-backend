@@ -16,10 +16,13 @@ $chickens = mysqli_fetch_all($send_query,MYSQLI_ASSOC) ;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Materialize css-->
     <link rel="stylesheet" href="assets/css/materialize.css">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/rcon.png" type="image/x-icon">
+
     <!-- Materialize Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -122,7 +125,7 @@ $chickens = mysqli_fetch_all($send_query,MYSQLI_ASSOC) ;
                                 <img src="assets/img/Chicken 1.jpg">
                             </div>
                                 <div class="card-content">
-                                    <span class="card-title "><a href="" class="green-text text-darken-3"><?php echo $chicken['recipe_name']; ?></a></span>
+                                    <span class="card-title "><a href="./" class="green-text text-darken-3"><?php echo $chicken['recipe_name']; ?></a></span>
                                 <p><?php echo $chicken['description']; ?></p>
                                 </div>
                                 <div class="card-action">
