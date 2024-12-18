@@ -117,7 +117,7 @@
                 <div class="">
                   <h6 class="red-text text-darken-4"><?php echo $cake['recipe_name'] ?></h6>
                 </div>
-                <p><?php echo $cake['ingredients']?></p>
+                <p><?php echo $cake['description']?></p>
                 <div class="chip"><?php echo $cake['duration'] ?> mins</div>
               </div>
               <div class="card-action">

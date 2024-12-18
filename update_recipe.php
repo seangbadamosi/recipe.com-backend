@@ -27,7 +27,7 @@
         $send_update_query = mysqli_query($connect, $update_query);
 
         if($send_update_query){
-            header("location:chicken.php");
+            header("location:home.html");
         }
     }
 
