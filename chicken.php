@@ -145,7 +145,7 @@ $chickens = mysqli_fetch_all($send_query,MYSQLI_ASSOC) ;
                                         <a href="./view_recipe.php?recipe_id=<?php echo $chicken['recipe_id']; ?>" class="btn btn-flat white-text green darken-2" >view more</a>
                                     </div>
                                     <div class="col l6 push-l1 flex-2">
-                                        <a href="" class="" ><i class="material-icons green-text">delete</i></a>
+                                        <a href="./delete_recipe.php" class="" ><i class="material-icons green-text">delete</i></a>
                                     </div>
                                 </div>
                             </div>

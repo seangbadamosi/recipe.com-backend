@@ -13,12 +13,16 @@
 
     $update_recipe_name = "";
 
+    $update_recipe_description ="";
+
     if(isset($_POST['update'])){
         $update_id = $_POST['update_recipe_id'];
 
         $update_recipe_name = $_POST ['update_recipe_name'];
 
-        $update_query = "UPDATE `recipes_tb` SET `recipe_name`='$update_recipe_name' WHERE `recipe_id` = '$update_id'";
+        $update_recipe_description = $_POST ['update_recipe_description'];
+
+        $update_query = "UPDATE `recipes_tb` SET `recipe_name`='$update_recipe_name',`description` = '$update_recipe_description' WHERE `recipe_id` = '$update_id'";
 
         $send_update_query = mysqli_query($connect, $update_query);
 
@@ -124,6 +128,7 @@
                     <input type="hidden" name="update_recipe_id" value="<?php echo $recipe['recipe_id']; ?>">
                     <div class="col s12 input-field">
                         <input type="text" name="update_recipe_name" id="update_recipe_name" placeholder="<?php echo $recipe['recipe_name'] ?>">
+                        <textarea id="update_recipe_description" name="update_recipe_description" class="materialize-textarea" placeholder="<?php echo $recipe['description'] ?>"></textarea>
                     </div>
                     <div class="col s12 input-field center-align">
                         <input type="submit" class="btn btn-large btn-flat green white-text" value="update" name="update">
