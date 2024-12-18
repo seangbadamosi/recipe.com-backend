@@ -20,7 +20,7 @@
 
         $update_recipe_name = $_POST ['update_recipe_name'];
 
-        $update_recipe_description = $_POST ['update_recipe_description'];
+        $update_recipe_description = htmlspecialchars($_POST ['update_recipe_description']);
 
         $update_query = "UPDATE `recipes_tb` SET `recipe_name`='$update_recipe_name',`description` = '$update_recipe_description' WHERE `recipe_id` = '$update_id'";
 
