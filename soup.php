@@ -137,7 +137,7 @@ $soups = mysqli_fetch_all($send_query,MYSQLI_ASSOC);
                         <a href="./view_recipe.php?recipe_id=<?php echo $soup['recipe_id']; ?>" class="btn btn-flat white-text orange darken-2">view more</a>
                   </div>
                   <div class="col l6 push-l1 flex-2">
-                      <a href="./delete_recipe.php" class="" ><i class="material-icons orange-text text-darken-2">delete</i></a>
+                      <a href="delete_recipe.php?recipe_id=<?php echo $soup['recipe_id']  ?>" class="" ><i class="material-icons orange-text text-darken-2">delete</i></a>
                   </div>
             </div>
             </div>
