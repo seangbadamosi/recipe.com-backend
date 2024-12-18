@@ -43,6 +43,9 @@
           font-size: 14pt !important;
       }
 
+      .col > .card{
+            height: 70vh;
+        }
   </style>
 </head>
 <body>

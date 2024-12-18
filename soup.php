@@ -46,6 +46,9 @@ $soups = mysqli_fetch_all($send_query,MYSQLI_ASSOC);
         font-size: 14pt !important;
     }
 
+    .col > .card{
+            height: 72vh;
+        }
   </style>
 </head>
 <body>

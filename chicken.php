@@ -51,6 +51,18 @@ $chickens = mysqli_fetch_all($send_query,MYSQLI_ASSOC) ;
         p {
         font-size: 14pt !important;
         }
+
+        .flex{
+            display: flex;justify-content: space-between;align-items: center;
+        }
+
+        .flex-1{
+            display:flex;justify-content: space-evenly;
+        }
+
+        .flex-2{
+            display:flex;justify-content: space-evenly;
+        }
     </style>
 </head>
 <body>
@@ -104,7 +116,7 @@ $chickens = mysqli_fetch_all($send_query,MYSQLI_ASSOC) ;
                 </li>
             </ul>
         </div>
-        <!-- <img src="./assets/img/chicken-main.jpg" alt="" class="responsive-img hide-on-large-only"> -->
+        <img src="./assets/img/chicken-main.jpg" alt="" class="responsive-img hide-on-large-only"> 
     </header>
     <main>
         <section class="section">
@@ -125,15 +137,20 @@ $chickens = mysqli_fetch_all($send_query,MYSQLI_ASSOC) ;
                                 <img src="assets/img/Chicken 1.jpg">
                             </div>
                                 <div class="card-content">
-                                    <span class="card-title "><a href="./" class="green-text text-darken-3"><?php echo $chicken['recipe_name']; ?></a></span>
+                                    <span class="card-title "><?php echo $chicken['recipe_name']; ?></span>
                                 <p><?php echo $chicken['description']; ?></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="./view_recipe.php?recipe_id=<?php echo $chicken['recipe_id']; ?>" class="btn btn-flat white-text green darken-2">view more</a>
+                                <div class="card-action flex">
+                                    <div class="col l6 flex-1">
+                                        <a href="./view_recipe.php?recipe_id=<?php echo $chicken['recipe_id']; ?>" class="btn btn-flat white-text green darken-2" >view more</a>
+                                    </div>
+                                    <div class="col l6 push-l1 flex-2">
+                                        <a href="" class="" ><i class="material-icons green-text">delete</i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    <?php }  ?>
+                    <?php } ?>
                 </div>
                 <div class="center-align">
                     <a href="https://en.wikipedia.org/wiki/List_of_chicken_dishes" class="btn-large btn-flat white-text green darken-3">view all chicken</a>
