@@ -5,11 +5,11 @@
 
     $fetch_query ="SELECT * FROM `recipes_tb` WHERE `recipe_id` = '$recipe_id' ";
 
-    $send_query = mysqli_query($connect,$fetch_query);
+    $send_query = mysqli_query($connect, $fetch_query);
 
     $recipe = mysqli_fetch_assoc($send_query);
 
-    // print_r($recipe);
+   // print_r($recipe);
 
     $delete_id = "";
 
@@ -18,10 +18,10 @@
 
         $delete_query = "DELETE FROM `recipes_tb` WHERE `recipe_id` = '$delete_id' ";
 
-        $send_delete_query = mysqli_query($connect,$delete_query);
+        $send_delete_query = mysqli_query($connect, $delete_query);
 
         if($delete_query){
-            header("location:home.html");
+            header("Location: home.html");
         }
     }
 ?>
@@ -90,13 +90,6 @@
         <br>
         <li><a href="./login.php" target="_blank" class="btn orange darken-4 z-depth-0">Login</a></li>
     </ul>
-    <div class="slider hide-on-med-and-down">
-      <ul class="slides">
-        <li><img src="assets/img/soup-main.jpg" class="responsive-img" alt="">
-        </li>
-      </ul>
-    </div>
-    <img src="assets/img/soup-main.jpg" alt="" class="responsive-img hide-on-large-only">
 </header>
 
 <main class="">
@@ -106,7 +99,7 @@
                 <div class="row">
                     <div class="col l7">
                         <div class="card-image">
-                            <img src="" alt="" class="">
+                            <img src="./assets/img/Chicken 1.jpg" alt="" class="">
                         </div>
                     </div>
                     <div class="col l5">

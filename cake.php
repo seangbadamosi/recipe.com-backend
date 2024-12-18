@@ -137,7 +137,7 @@
                       <a href="./view_recipe.php?recipe_id=<?php echo $cake['recipe_id']; ?>" class="red-text text-darken-4">MORE DETAILS</a>
                   </div>
                   <div class="col l6 push-l1 flex-2">
-                      <a href="./delete_recipe.php" class="" ><i class="material-icons red-text text-darken-4">delete</i></a>
+                      <a href="delete_recipe.php?recipe_id=<?php echo $cake['recipe_id']  ?>" class="" ><i class="material-icons red-text text-darken-4">delete</i></a>
                   </div>
               </div>
             </div>
