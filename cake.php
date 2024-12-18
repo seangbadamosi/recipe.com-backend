@@ -28,20 +28,32 @@
 
   <style>
       * {
-      font-family: "Josefin Sans", serif;
+          font-family: "Josefin Sans", serif;
       }
 
     .gradient-bg {
-      background: linear-gradient(to bottom, #f5f5f5, #B71C1C);
+        background: linear-gradient(to bottom, #f5f5f5, #B71C1C);
       }
 
     .text-justify {
-          text-align: justify !important;
-      }
+        text-align: justify !important;
+    }
 
     p {
-          font-size: 14pt !important;
-      }
+        font-size: 14pt !important;
+    }
+
+    .flex{
+        display: flex;justify-content: space-between;align-items: center;
+    }
+
+    .flex-1{
+        display:flex;justify-content: space-evenly;
+    }
+
+    .flex-2{
+        display:flex;justify-content: space-evenly;
+    }
   </style>
 </head>
 <body>
@@ -120,8 +132,13 @@
                 <p><?php echo $cake['description']?></p>
                 <div class="chip"><?php echo $cake['duration'] ?> mins</div>
               </div>
-              <div class="card-action">
-                <a href="./view_recipe.php?recipe_id=<?php echo $cake['recipe_id']; ?>" class="red-text text-darken-4">MORE DETAILS</a>
+              <div class="card-action flex">
+                  <div class="col l6 flex-1">
+                      <a href="./view_recipe.php?recipe_id=<?php echo $cake['recipe_id']; ?>" class="red-text text-darken-4">MORE DETAILS</a>
+                  </div>
+                  <div class="col l6 push-l1 flex-2">
+                      <a href="./delete_recipe.php" class="" ><i class="material-icons red-text text-darken-4">delete</i></a>
+                  </div>
               </div>
             </div>
           </div>

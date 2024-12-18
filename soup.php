@@ -46,9 +46,17 @@ $soups = mysqli_fetch_all($send_query,MYSQLI_ASSOC);
         font-size: 14pt !important;
     }
 
-    .col > .card{
-            height: 72vh;
-        }
+    .flex{
+        display: flex;justify-content: space-between;align-items: center;
+    }
+
+    .flex-1{
+        display:flex;justify-content: space-evenly;
+    }
+
+    .flex-2{
+        display:flex;justify-content: space-evenly;
+    }
   </style>
 </head>
 <body>
@@ -124,8 +132,13 @@ $soups = mysqli_fetch_all($send_query,MYSQLI_ASSOC);
                 <h6 class="orange-text text-darken-4"><?php echo $soup['recipe_name']; ?></h6>
                 <p><?php echo $soup['description']; ?></p>
               </div>
-              <div class="card-action">
-                <a href="./view_recipe.php?recipe_id=<?php echo $soup['recipe_id']; ?>" class="btn btn-flat white-text orange darken-2">view more</a>
+              <div class="card-action flex">
+                  <div class="col l6 flex-1">
+                        <a href="./view_recipe.php?recipe_id=<?php echo $soup['recipe_id']; ?>" class="btn btn-flat white-text orange darken-2">view more</a>
+                  </div>
+                  <div class="col l6 push-l1 flex-2">
+                      <a href="./delete_recipe.php" class="" ><i class="material-icons orange-text text-darken-2">delete</i></a>
+                  </div>
             </div>
             </div>
           </div>
